@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WeatherApp - Simple & Beautiful Landing</title>
+    <!-- TailwindCSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body
+    class="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-slate-100 flex items-center justify-center px-4"
+  >
+    <div class="w-full max-w-4xl">
+      <!-- Glassmorphism card container -->
+      <div
+        class="relative overflow-hidden rounded-3xl border border-slate-700/60 bg-slate-900/70 backdrop-blur-2xl shadow-[0_24px_80px_rgba(15,23,42,0.85)]"
+      >
+        <!-- Decorative gradients -->
+        <div
+          class="pointer-events-none absolute -left-24 -top-32 h-72 w-72 rounded-full bg-sky-500/30 blur-3xl"
+        ></div>
+        <div
+          class="pointer-events-none absolute -right-16 top-20 h-64 w-64 rounded-full bg-emerald-500/25 blur-3xl"
+        ></div>
+
+        <!-- Content -->
+        <div
+          class="relative grid gap-10 px-8 py-10 md:grid-cols-[1.4fr,1fr] md:px-12 md:py-12"
+        >
+          <!-- Left: main hero copy -->
+          <section class="flex flex-col justify-between gap-8">
+            <header>
+              <div
+                class="inline-flex items-center gap-2 rounded-full bg-slate-900/70 px-3 py-1 text-xs text-slate-300 ring-1 ring-slate-700/80"
+              >
+                <span
+                  class="inline-flex h-2 w-2 rounded-full bg-emerald-400 shadow shadow-emerald-400/70"
+                ></span>
+                <span
+                  class="uppercase tracking-[0.18em] text-[11px] text-slate-300"
+                  >WeatherApp</span
+                >
+              </div>
+              <h1
+                class="mt-4 text-3xl font-semibold leading-tight tracking-tight md:text-4xl"
+              >
+                Theo dõi thời tiết
+                <span
+                  class="bg-gradient-to-r from-sky-300 via-emerald-300 to-teal-200 bg-clip-text text-transparent"
+                >
+                  thời gian thực
+                </span>
+                cho mọi thành phố.
+              </h1>
+              <p
+                class="mt-4 text-sm leading-relaxed text-slate-300 md:text-base"
+              >
+                Một landing page tối giản nhưng hiện đại cho ứng dụng xem thời
+                tiết. Được xây dựng hoàn toàn bằng
+                <span class="font-semibold text-emerald-300">HTML</span> và
+                <span class="font-semibold text-sky-300">TailwindCSS</span>, sẵn
+                sàng để bạn kết nối
+                <span class="font-semibold text-emerald-300">Axios</span> và API
+                thời tiết sau này.
+              </p>
+            </header>
+
+            <!-- Fake search bar (UI only) -->
+            <div class="space-y-3">
+              <p
+                class="text-xs font-semibold uppercase tracking-[0.2em] text-slate-400"
+              >
+                Demo giao diện tìm kiếm
+              </p>
+              <div
+                class="flex flex-col gap-3 rounded-2xl bg-slate-900/80 p-3 ring-1 ring-slate-700/80 md:flex-row md:items-center md:px-4 md:py-3"
+              >
+                <div class="flex-1">
+                  <label
+                    class="block text-[11px] font-medium uppercase tracking-[0.18em] text-slate-500"
+                  >
+                    Thành phố
+                  </label>
+                  <div
+                    class="mt-1 flex items-center gap-2 rounded-xl bg-slate-950/70 px-3 py-2 text-sm text-slate-300 ring-1 ring-slate-800"
+                  >
+                    <span
+                      class="inline-flex h-6 w-6 items-center justify-center rounded-full bg-sky-500/10 text-sky-300"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="h-3.5 w-3.5"
+                      >
+                        <circle cx="11" cy="11" r="7" />
+                        <path d="m16 16 4 4" />
+                      </svg>
+                    </span>
+                    <span class="truncate text-slate-500">
+                      Ví dụ: Hanoi, Ho Chi Minh City
+                    </span>
+                  </div>
+                </div>
+                <button
+                  type="button"
+                  class="inline-flex items-center justify-center rounded-xl bg-gradient-to-r from-emerald-400 to-sky-400 px-4 py-2 text-sm font-semibold text-slate-950 shadow-lg shadow-emerald-500/40 transition hover:from-emerald-300 hover:to-sky-300 focus:outline-none focus:ring-2 focus:ring-emerald-400 focus:ring-offset-2 focus:ring-offset-slate-900"
+                >
+                  <span class="mr-2">Sắp ra mắt</span>
+                  <span
+                    class="inline-flex h-5 w-5 items-center justify-center rounded-full bg-slate-950/20 text-[10px] font-bold"
+                  >
+                    v1
+                  </span>
+                </button>
+              </div>
+              <p class="text-[11px] text-slate-400">
+                Phần chức năng (gọi API bằng Axios, hiển thị thời tiết) sẽ được
+                bổ sung ở bước tiếp theo.
+              </p>
+            </div>
+
+            <!-- Feature bullets -->
+            <div class="mt-2 grid gap-3 text-xs text-slate-300 md:grid-cols-3">
+              <div
+                class="rounded-2xl bg-slate-900/70 px-3 py-3 ring-1 ring-slate-700/80"
+              >
+                <p
+                  class="text-[11px] font-semibold uppercase tracking-[0.18em] text-sky-300"
+                >
+                  UI hiện đại
+                </p>
+                <p class="mt-1 text-[13px]">
+                  Thiết kế glassmorphism, gradient mềm, tối ưu cho cả desktop
+                  lẫn mobile.
+                </p>
+              </div>
+              <div
+                class="rounded-2xl bg-slate-900/70 px-3 py-3 ring-1 ring-slate-700/80"
+              >
+                <p
+                  class="text-[11px] font-semibold uppercase tracking-[0.18em] text-emerald-300"
+                >
+                  100% Tailwind
+                </p>
+                <p class="mt-1 text-[13px]">
+                  Toàn bộ layout & style sử dụng utility class của TailwindCSS
+                  (CDN).
+                </p>
+              </div>
+              <div
+                class="rounded-2xl bg-slate-900/70 px-3 py-3 ring-1 ring-slate-700/80"
+              >
+                <p
+                  class="text-[11px] font-semibold uppercase tracking-[0.18em] text-teal-300"
+                >
+                  Sẵn sàng API
+                </p>
+                <p class="mt-1 text-[13px]">
+                  Dễ dàng gắn Axios & Open-Meteo API ở bước sau mà không cần
+                  chỉnh lại UI.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <!-- Right: preview card (static mock) -->
+          <aside
+            class="flex flex-col justify-between gap-4 rounded-2xl bg-slate-900/80 p-4 ring-1 ring-slate-700/80 md:p-5"
+          >
+            <!-- Mock current weather card -->
+            <div
+              class="relative overflow-hidden rounded-2xl bg-gradient-to-br from-sky-500 via-emerald-400 to-sky-600 p-4 text-slate-950 shadow-lg"
+            >
+              <div
+                class="pointer-events-none absolute -right-8 -top-10 h-28 w-28 rounded-full bg-white/25 blur-2xl"
+              ></div>
+              <div
+                class="pointer-events-none absolute -left-10 bottom-0 h-24 w-24 rounded-full bg-sky-900/20 blur-2xl"
+              ></div>
+
+              <div class="relative">
+                <p
+                  class="text-[11px] font-semibold uppercase tracking-[0.22em] text-slate-900/70"
+                >
+                  Current Weather
+                </p>
+                <div class="mt-3 flex items-start justify-between">
+                  <div>
+                    <p class="text-xs font-medium text-slate-900/80">
+                      Hanoi, Vietnam
+                    </p>
+                    <p class="mt-1 text-4xl font-bold leading-none">27.3°C</p>
+                    <p class="mt-1 text-sm font-medium text-slate-900/80">
+                      Trời quang đãng
+                    </p>
+                  </div>
+                  <div
+                    class="flex flex-col items-end text-xs font-medium text-slate-900/80"
+                  >
+                    <span class="inline-flex items-center gap-1">
+                      <span
+                        class="h-2 w-2 rounded-full bg-amber-300 shadow shadow-amber-300/70"
+                      ></span>
+                      Gió: 8.5 km/h
+                    </span>
+                    <span class="mt-1 inline-flex items-center gap-1">
+                      <span
+                        class="h-2 w-2 rounded-full bg-sky-200 shadow shadow-sky-200/70"
+                      ></span>
+                      Mã thời tiết: 0
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tech stack pill list -->
+            <div class="space-y-2 text-xs text-slate-300">
+              <p
+                class="text-[11px] font-semibold uppercase tracking-[0.18em] text-slate-400"
+              >
+                Stack sử dụng
+              </p>
+              <div class="flex flex-wrap gap-2">
+                <span
+                  class="inline-flex items-center gap-1 rounded-full bg-slate-900 px-3 py-1 text-[11px] ring-1 ring-slate-700"
+                >
+                  <span class="h-1.5 w-1.5 rounded-full bg-emerald-400"></span>
+                  HTML
+                </span>
+                <span
+                  class="inline-flex items-center gap-1 rounded-full bg-slate-900 px-3 py-1 text-[11px] ring-1 ring-sky-500/60"
+                >
+                  <span class="h-1.5 w-1.5 rounded-full bg-sky-400"></span>
+                  TailwindCSS (CDN)
+                </span>
+                <span
+                  class="inline-flex items-center gap-1 rounded-full bg-slate-900 px-3 py-1 text-[11px] ring-1 ring-emerald-500/60"
+                >
+                  <span class="h-1.5 w-1.5 rounded-full bg-emerald-400"></span>
+                  Axios (cho bước tiếp theo)
+                </span>
+              </div>
+            </div>
+
+            <!-- Small footer note -->
+            <p class="mt-1 text-[11px] leading-relaxed text-slate-500">
+              Đây chỉ là giao diện tĩnh. Khi sẵn sàng, bạn có thể thêm
+              JavaScript và Axios để gọi
+              <span class="text-sky-300">Open-Meteo API</span> và hiển thị dữ
+              liệu thật.
+            </p>
+          </aside>
+        </div>
+      </div>
+    </div>
+
+    <!-- Chưa dùng JavaScript / Axios ở bước này -->
+  </body>
+</html>
